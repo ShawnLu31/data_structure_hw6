@@ -8,7 +8,7 @@
 * comparison:
 ![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/diff.JPG)
 ## Program sturcture
-* 流程圖:
+* 流程圖:  
 ![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/structure.png)
 ## Program functions
 ### Main
