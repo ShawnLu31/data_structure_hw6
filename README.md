@@ -141,6 +141,10 @@ if(ptr == NULL){
 `子樹回傳的高度 + 1 (node Paul) = ptr 右子樹的高度`
 #### step3: rotation
 1. RR rotation:
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/rotation/rr.PNG)
 2. LL rotation:
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/rotation/ll.PNG)
 3. RL rotation:
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/rotation/rl.PNG)
 4. LR rotation:
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/rotation/lr.PNG)
