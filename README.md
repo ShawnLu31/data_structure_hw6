@@ -31,28 +31,28 @@
 * Return Value
 	* return the pointer of new root after rebalancing.
 ##### 3. Node_pointer RR(Node_pointer ptr);
-`RR rotation for rebalancing of AVL tree `  
+`RR rotation for rebalancing AVL tree `  
 `balance factor < -1`
 * Parameter
 	* ptr   左右子樹不平衡的node的pointer.
 * Return Value
 	* 回傳該子樹經平衡調整後的新root的pointer.
 ##### 4. Node_pointer LL(Node_pointer ptr);
-`LL rotation for rebalancing of AVL tree `  
+`LL rotation for rebalancing AVL tree `  
 `balance factor > 1`
 * Parameter
 	* ptr   左右子樹不平衡的node的pointer.
 * Return Value
 	* 回傳該子樹經平衡調整後的新root的pointer.
 ##### 5. Node_pointer RL(Node_pointer ptr);
-`RL rotation for rebalancing of AVL tree `  
+`RL rotation for rebalancing AVL tree `  
 `balance factor < -1`
 * Parameter
 	* ptr   左右子樹不平衡的node的pointer.
 * Return Value
 	* 回傳該子樹經平衡調整後的新root的pointer.
 ##### 6. Node_pointer LR(Node_pointer ptr);
-`LR rotation for rebalancing of AVL tree `  
+`LR rotation for rebalancing AVL tree `  
 `balance factor > 1`
 * Parameter
 	* ptr   左右子樹不平衡的node的pointer.
@@ -112,3 +112,35 @@ struct Record{
 };
 ```
 ### Construct AVL tree
+#### step1: insert
+* 依序比較字母大小，較大放在右子樹，較小放在左子樹。
+* 定義: A < B, a < b
+* e.g.
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/insert.png)
+#### step2: get balance factor
+1. getBF(Node_pointer ptr);
+```c
+	return getH(ptr->left_child) - getH(ptr->right_child);
+```
+* e.g.  
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/bf1.png)
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/bf2.png)
+2. getH(Node_pointer ptr);
+```c
+if(ptr == NULL){
+		return 0;
+	}
+	else{
+		return 1 + Max(getH(ptr->left_child), getH(ptr->right_child)); //回傳左右子樹較大的高度
+	}
+```
+* e.g.  
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/h1.png)
+`因Paul左子樹高度 > 右子樹高度, 將左子樹高度回傳`
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/h2.png)
+`子樹回傳的高度 + 1 (node Paul) = ptr 右子樹的高度`
+#### step3: rotation
+1. RR rotation:
+2. LL rotation:
+3. RL rotation:
+4. LR rotation:
