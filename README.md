@@ -9,7 +9,13 @@
 ![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/diff.JPG)
 ## Program sturcture
 * 流程圖:
+![image](https://github.com/ShawnLu31/data_structure_hw6/blob/main/pic/structure.png)
 ## Program functions
+### Main
+* Parameter
+	* char s[]  						儲存除入的字串
+	* char cmd  						儲存現階段執行的任務('D' or 'S')
+	* Node_pointer root 		AVL tree 的 root
 ### Construct AVL tree
 ##### 1. Node_pointer genNode(char record[]);
 `generate node`  
@@ -105,3 +111,4 @@ struct Record{
 	char phone_number[MAX_PHONE_LEN];
 };
 ```
+### Construct AVL tree
